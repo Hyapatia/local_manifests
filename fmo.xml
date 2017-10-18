@@ -39,6 +39,6 @@
 	<project path="external/freetype" name="platform/external/freetype" remote="linaro" revision="linaro-upstream-2.8.1" />
 	<remove-project name="platform/external/fio" />
 	<project path="external/fio" name="platform/external/fio" remote="linaro" revision="linaro-upstream-3.1" />
-	<remove-project name="platform/external/sqlite" />
-	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.20.1" />
+	<!-- remove-project name="platform/external/sqlite" />
+	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.20.1" / -->
 </manifest>
