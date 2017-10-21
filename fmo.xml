@@ -39,6 +39,10 @@
 	<project path="external/freetype" name="platform/external/freetype" remote="linaro" revision="linaro-upstream-2.8.1" />
 	<remove-project name="platform/external/fio" />
 	<project path="external/fio" name="platform/external/fio" remote="linaro" revision="linaro-upstream-3.1" />
-	<!-- remove-project name="platform/external/sqlite" />
-	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.20.1" / -->
+	<remove-project name="platform/external/sqlite" />
+	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.20.1-for-8.0.x" />
+	<remove-project name="platform/external/harfbuzz_ng" />
+	<project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="linaro" revision="linaro-upstream-1.6.0" />
+	<remove-project name="platform/external/libpng" />
+	<project path="external/libpng" name="platform/external/libpng" remote="linaro" revision="linaro-upstream-1.6.33" />
 </manifest>
