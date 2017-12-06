@@ -8,7 +8,7 @@
 	<remove-project name="platform/build" />
 	<remove-project name="platform/external/chromium-webview" />
 	<remove-project name="device/huawei/angler" />
-	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.0.0">
+	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0">
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
 		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -17,11 +17,11 @@
 		<linkfile src="target" dest="build/target" />
 		<linkfile src="tools" dest="build/tools" />
 	</project>
-	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-8.0.0" />
-	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-8.0.0" />
-	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-8.0.0" />
+	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-8.1.0" />
+	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-8.1.0" />
+	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-8.1.0" />
 	<project path="packages/external/chromium-webview" name="platform_external_chromium-webview" remote="fmo" revision="master" />
-	<project path="device/huawei/angler" name="device_huawei_angler" remote="fmo" revision="fmo-8.0.0" />
+	<project path="device/huawei/angler" name="device_huawei_angler" remote="fmo" revision="fmo-8.1.0" />
 	<project path="packages/apps/prebuilt" name="platform_packages_apps_prebuilt" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/forecastie" name="platform_packages_apps_prebuilt_forecastie" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/signal" name="platform_packages_apps_prebuilt_signal" remote="fmo" revision="master" />
@@ -57,7 +57,7 @@
 	<remove-project name="platform/external/sqlite" />
 	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.20.1-for-8.0.x" />
 	<remove-project name="platform/external/harfbuzz_ng" />
-	<project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="linaro" revision="linaro-upstream-1.7.1" />
+	<project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="linaro" revision="linaro-upstream-1.7.2" />
 	<remove-project name="platform/external/libpng" />
 	<project path="external/libpng" name="platform/external/libpng" remote="linaro" revision="linaro-upstream-1.6.34" />
 	<remove-project name="platform/external/libjpeg-turbo" />
