@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote name="fmo" fetch="https://github.com/FreeMobileOS" />
+	<remote name="lineageos" fetch="https://github.com/LineageOS" />
 	<remote name="linaro" fetch="https://android-git.linaro.org/git/" review="android-review.linaro.org" />
 	<remove-project name="platform/packages/inputmethods/LatinIME" />
 	<remove-project name="platform/frameworks/base" />
@@ -8,6 +9,7 @@
 	<remove-project name="platform/build" />
 	<remove-project name="platform/external/chromium-webview" />
 	<remove-project name="device/huawei/angler" />
+	<remove-project name="platform/packages/apps/Terminal" />
 	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0">
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -35,7 +37,6 @@
 	<project path="packages/apps/prebuilt/passandroid" name="platform_packages_apps_prebuilt_passandroid" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/wire" name="platform_packages_apps_prebuilt_wire" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/openlauncher" name="platform_packages_apps_prebuilt_openlauncher" remote="fmo" revision="master" />
-	<project path="packages/apps/prebuilt/terminal" name="platform_packages_apps_prebuilt_terminal" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/lawnchair" name="platform_packages_apps_prebuilt_lawnchair" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/silence" name="platform_packages_apps_prebuilt_silence" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/yalpstore" name="platform_packages_apps_prebuilt_yalpstore" remote="fmo" revision="master" />
@@ -48,6 +49,9 @@
 	<project path="packages/apps/GmsCore" name="android_packages_apps_GmsCore" remote="fmo" revision="fmo-master" />
 	<project path="packages/apps/GsfProxy" name="android_packages_apps_GsfProxy" remote="fmo" revision="fmo-master" />
 	<project path="packages/apps/FakeStore" name="android_packages_apps_FakeStore" remote="fmo" revision="fmo-master" />
+
+	<!-- LineageOS has a nicer Terminal app than AOSP -->
+	<project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="lineageos" revision="lineage-15.0" />
 
 	<!-- Use some newer upstream projects -->
 	<remove-project name="platform/external/freetype" />
