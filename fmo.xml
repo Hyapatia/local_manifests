@@ -305,7 +305,7 @@
     <!-- FMO based repos -->
     <remove-project name="platform/external/chromium-webview" />
 	<remove-project name="platform/packages/apps/Terminal" />
-    <project path="build/make" name="build" remote="fmo" revision="fmo-8.1.0-mido-stagging" >
+    <project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0-mido-stagging" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
