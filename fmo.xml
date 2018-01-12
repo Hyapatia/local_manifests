@@ -132,27 +132,14 @@
     <remove-project name="platform/system/extras" />
     <remove-project name="platform/system/libhidl" />
 
-    <!-- Framework repos -->
-    <remove-project name="platform/frameworks/native" />
-    <remove-project name="platform/frameworks/av" />
-    <remove-project name="platform/frameworks/base" />
-    <remove-project name="platform/frameworks/opt/net/wifi" />
-    <remove-project name="platform/frameworks/support" />
-
     <!-- Packages repos -->
     <remove-project name="platform/packages/apps/Email" />
     <remove-project name="platform/packages/apps/Browser2" />
-    <remove-project name="platform/packages/apps/Camera2" />
-    <remove-project name="platform/packages/apps/EmergencyInfo" />
     <remove-project name="platform/packages/apps/Bluetooth" />
     <remove-project name="platform/packages/apps/QuickSearchBox" />
     <remove-project name="platform/packages/apps/Music" />
-    <remove-project name="platform/packages/apps/UnifiedEmail" />
-    <remove-project name="platform/packages/apps/Protips" />
-    <remove-project name="platform/packages/apps/PhoneCommon" />
     <remove-project name="platform/packages/apps/DevCamera" />
     <remove-project name="platform/packages/apps/Nfc" />
-    <remove-project name="platform/packages/apps/PackageInstaller" />
     <remove-project name="platform/packages/inputmethods/LatinIME" />
     <remove-project name="platform/packages/apps/Messaging" />
     <remove-project name="platform/packages/apps/ExactCalculator" />
@@ -219,12 +206,6 @@
     <project path="device/qcom/common" name="device_qcom_common" remote="pixel" />
     <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
 
-    <!-- frameworks -->
-    <project path="frameworks/native" name="frameworks_native" remote="pixel" />
-    <project path="frameworks/av" name="frameworks_av" remote="pixel" />
-    <project path="frameworks/support" name="frameworks_support" remote="pixel" />
-    <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
-
     <!-- hardware -->
     <project path="hardware/interfaces" name="hardware_interfaces" remote="pixel" />
     <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
@@ -256,13 +237,9 @@
     <project path="hardware/custom-interfaces" name="hardware_custom-interfaces" remote="pixel" />
 
     <!-- packages -->
-    <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="pixel" />
-    <project path="packages/apps/EmergencyInfo" name="packages_apps_EmergencyInfo" remote="pixel" />
     <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="pixel" />
     <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
     <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
-    <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="pixel" />
-    <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
     <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-15.0" />
 
     <!-- vendor -->
@@ -280,6 +257,7 @@
     <!-- FMO based repos -->
     <remove-project name="platform/external/chromium-webview" />
 	<remove-project name="platform/packages/apps/Terminal" />
+	<remove-project name="platform/frameworks/base" />
     <project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0-mido-stagging" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
