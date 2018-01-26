@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote name="fmo" fetch="https://github.com/FreeMobileOS" />
+	<remote name="fmogl" fetch="https://gitlab.com/FreeMobileOS" />
 	<remote name="lineageos" fetch="https://github.com/LineageOS" />
 	<remote name="linaro" fetch="https://android-git.linaro.org/git/" review="android-review.linaro.org" />
 	<remove-project name="platform/packages/inputmethods/LatinIME" />
@@ -29,7 +30,7 @@
 	<project path="packages/apps/prebuilt/forecastie" name="platform_packages_apps_prebuilt_forecastie" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/signal" name="platform_packages_apps_prebuilt_signal" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/AntennaPod" name="platform_packages_apps_prebuilt_AntennaPod" remote="fmo" revision="master" />
-	<project path="packages/apps/prebuilt/chromium" name="platform_packages_apps_prebuilt_chromium" remote="fmo" revision="master" />
+	<project path="packages/apps/prebuilt/chromium" name="platform_packages_apps_prebuilt_chromium" remote="fmogl" revision="master" />
 	<project path="packages/apps/prebuilt/omim" name="platform_packages_apps_prebuilt_omim" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/mpv" name="platform_packages_apps_prebuilt_mpv" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/k9mail" name="platform_packages_apps_prebuilt_k9mail" remote="fmo" revision="master" />
