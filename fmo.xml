@@ -11,6 +11,7 @@
 	<remove-project name="platform/build" />
 	<remove-project name="platform/external/chromium-webview" />
 	<remove-project name="device/huawei/angler" />
+	<remove-project name="device/google/taimen" />
 	<remove-project name="platform/packages/apps/Terminal" />
 	<remove-project name="platform/bootable/recovery" />
 	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0">
@@ -27,6 +28,7 @@
 	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-8.1.0" />
 	<project path="external/chromium-webview" name="platform_external_chromium-webview" remote="fmo" revision="master" />
 	<project path="device/huawei/angler" name="device_huawei_angler" remote="fmo" revision="fmo-8.1.0" />
+	<project path="device/google/taimen" name="device_google_taimen" remote="fmo" revision="fmo-8.1.0" />
 	<project path="packages/apps/prebuilt" name="platform_packages_apps_prebuilt" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/forecastie" name="platform_packages_apps_prebuilt_forecastie" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/signal" name="platform_packages_apps_prebuilt_signal" remote="fmo" revision="master" />
