@@ -297,4 +297,7 @@
     <!-- vendor -->
     <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="fmo" revision="fmo-8.1.0-mido-stagging" />
 
+    <!-- mido kernel -->
+	<project path="kernel/xiaomi/msm8953" name="android_kernel_msm-3.18" remote="fmo" revision="fmo-8.1.0-mido-caf" groups="mido,pdk" clone-depth="1" />
+
 </manifest>
