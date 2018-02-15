@@ -81,8 +81,6 @@
     <remove-project name="platform/external/selinux" />
     <remove-project name="platform/external/tinycompress" />
     <remove-project name="platform/external/e2fsprogs" />
-    <remove-project name="platform/external/libnfnetlink" />
-    <remove-project name="platform/external/libnetfilter_conntrack" />
 
     <!-- Hardware repos -->
     <remove-project name="platform/hardware/intel/audio_media" />
@@ -173,8 +171,6 @@
     <project path="external/e2fsprogs" name="external_e2fsprogs" remote="pixel" />
     <project path="external/exfat" name="external_exfat" remote="pixel" />
     <project path="external/ntfs-3g" name="external_ntfs-3g" remote="pixel" />
-    <project path="external/libnfnetlink" name="external_libnfnetlink" remote="pixel" />
-    <project path="external/libnetfilter_conntrack" name="external_libnetfilter_conntrack" remote="pixel" />
 
     <!-- system -->
     <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
