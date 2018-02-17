@@ -39,7 +39,6 @@
     <remove-project name="device/generic/armv7-a-neon" />
     <remove-project name="device/generic/car" />
     <remove-project name="device/generic/common" />
-    <remove-project name="device/generic/goldfish" />
     <remove-project name="device/generic/goldfish-opengl" />
     <remove-project name="device/generic/mips" />
     <remove-project name="device/generic/mips64" />
@@ -126,14 +125,9 @@
     <remove-project name="platform/packages/apps/Browser2" />
     <remove-project name="platform/packages/apps/Bluetooth" />
     <remove-project name="platform/packages/apps/QuickSearchBox" />
-    <remove-project name="platform/packages/apps/Music" />
     <remove-project name="platform/packages/apps/DevCamera" />
-    <remove-project name="platform/packages/apps/Nfc" />
     <remove-project name="platform/packages/inputmethods/LatinIME" />
-    <remove-project name="platform/packages/apps/Messaging" />
-    <remove-project name="platform/packages/apps/ExactCalculator" />
     <remove-project name="platform/packages/apps/Launcher2" />
-    <remove-project name="platform/packages/apps/Gallery" />
 
     <!-- Toolchain repos -->
     <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
@@ -210,7 +204,6 @@
     <!-- packages -->
     <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="pixel" />
     <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
-    <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
     <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-15.0" />
 
     <!-- vendor -->
