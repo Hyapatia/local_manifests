@@ -64,15 +64,15 @@
 
 	<!-- Use some newer upstream projects -->
 	<remove-project name="platform/external/freetype" />
-	<project path="external/freetype" name="platform/external/freetype" remote="linaro" revision="linaro-upstream-2.8.1" />
+	<project path="external/freetype" name="platform/external/freetype" remote="linaro" revision="linaro-upstream-2.9.0" />
 	<remove-project name="platform/external/fio" />
 	<project path="external/fio" name="platform/external/fio" remote="linaro" revision="linaro-upstream-3.2" />
 	<remove-project name="platform/external/sqlite" />
-	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.20.1-for-8.0.x" />
+	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.22.0-for-8.x" />
 	<remove-project name="platform/external/harfbuzz_ng" />
-	<project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="linaro" revision="linaro-upstream-1.7.2" />
+	<project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="linaro" revision="linaro-upstream-1.7.5" />
 	<remove-project name="platform/external/libpng" />
 	<project path="external/libpng" name="platform/external/libpng" remote="linaro" revision="linaro-upstream-1.6.34" />
 	<remove-project name="platform/external/libjpeg-turbo" />
-	<project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" remote="linaro" revision="linaro-upstream-1.5.2" />
+	<project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" remote="linaro" revision="linaro-upstream-1.5.3" />
 </manifest>
