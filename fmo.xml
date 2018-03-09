@@ -224,6 +224,7 @@
     <remove-project name="platform/external/chromium-webview" />
 	<remove-project name="platform/packages/apps/Terminal" />
 	<remove-project name="platform/frameworks/base" />
+	<remove-project name="platform/packages/apps/Dialer" />
     <project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0-mido-stagging" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -234,6 +235,7 @@
     <linkfile src="tools" dest="build/tools" />
     </project>
 	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-8.1.0" />
+	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-8.1.0" />
 	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-8.1.0" />
 	<project path="external/chromium-webview" name="platform_external_chromium-webview" remote="fmo" revision="master" />
 	<project path="device/huawei/angler" name="device_huawei_angler" remote="fmo" revision="fmo-8.1.0" />
