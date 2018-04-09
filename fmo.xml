@@ -23,12 +23,12 @@
 		<linkfile src="target" dest="build/target" />
 		<linkfile src="tools" dest="build/tools" />
 	</project>
-	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-8.1.0" />
-	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-8.1.0" />
-	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-8.1.0" />
+	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-9.0.0" />
+	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-9.0.0" />
+	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-9.0.0" />
 	<project path="external/chromium-webview" name="platform_external_chromium-webview" remote="fmo" revision="master" />
-	<project path="device/huawei/angler" name="device_huawei_angler" remote="fmo" revision="fmo-8.1.0" />
-	<project path="device/google/taimen" name="device_google_taimen" remote="fmo" revision="fmo-8.1.0" />
+	<project path="device/huawei/angler" name="device_huawei_angler" remote="fmo" revision="fmo-9.0.0" />
+	<project path="device/google/taimen" name="device_google_taimen" remote="fmo" revision="fmo-9.0.0" />
 	<project path="packages/apps/prebuilt" name="platform_packages_apps_prebuilt" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/forecastie" name="platform_packages_apps_prebuilt_forecastie" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/signal" name="platform_packages_apps_prebuilt_signal" remote="fmo" revision="master" />
@@ -65,8 +65,6 @@
 	<!-- Use some newer upstream projects -->
 	<remove-project name="platform/external/freetype" />
 	<project path="external/freetype" name="platform/external/freetype" remote="linaro" revision="linaro-upstream-2.9.0" />
-	<remove-project name="platform/external/fio" />
-	<project path="external/fio" name="platform/external/fio" remote="linaro" revision="linaro-upstream-3.2" />
 	<remove-project name="platform/external/sqlite" />
 	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.22.0-for-8.x" />
 	<remove-project name="platform/external/harfbuzz_ng" />
