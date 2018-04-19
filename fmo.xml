@@ -5,16 +5,16 @@
 	<remote name="microg" fetch="https://github.com/microg" />
 	<remote name="lineageos" fetch="https://github.com/LineageOS" />
 	<remote name="linaro" fetch="https://android-git.linaro.org/git/" review="android-review.linaro.org" />
-	<remove-project name="platform/packages/inputmethods/LatinIME" />
+	<!-- remove-project name="platform/packages/inputmethods/LatinIME" / -->
 	<remove-project name="platform/frameworks/base" />
-	<remove-project name="platform/packages/apps/Dialer" />
+	<!-- remove-project name="platform/packages/apps/Dialer" / -->
 	<remove-project name="platform/build" />
 	<remove-project name="platform/external/chromium-webview" />
 	<remove-project name="device/huawei/angler" />
-	<remove-project name="device/google/taimen" />
+	<!-- remove-project name="device/google/taimen" />
 	<remove-project name="platform/packages/apps/Terminal" />
-	<remove-project name="platform/bootable/recovery" />
-	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0">
+	<remove-project name="platform/bootable/recovery" / -->
+	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-9.0.0">
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
 		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -24,11 +24,11 @@
 		<linkfile src="tools" dest="build/tools" />
 	</project>
 	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-9.0.0" />
-	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-9.0.0" />
-	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-9.0.0" />
 	<project path="external/chromium-webview" name="platform_external_chromium-webview" remote="fmo" revision="master" />
 	<project path="device/huawei/angler" name="device_huawei_angler" remote="fmo" revision="fmo-9.0.0" />
-	<project path="device/google/taimen" name="device_google_taimen" remote="fmo" revision="fmo-9.0.0" />
+	<!-- project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-9.0.0" />
+	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-9.0.0" />
+	<project path="device/google/taimen" name="device_google_taimen" remote="fmo" revision="fmo-9.0.0" / -->
 	<project path="packages/apps/prebuilt" name="platform_packages_apps_prebuilt" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/forecastie" name="platform_packages_apps_prebuilt_forecastie" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/signal" name="platform_packages_apps_prebuilt_signal" remote="fmo" revision="master" />
@@ -52,15 +52,15 @@
 	<project path="packages/apps/prebuilt/fdroidclient" name="platform_packages_apps_prebuilt_fdroidclient" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/apkmirror" name="platform_packages_apps_prebuilt_apkmirror" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/kdeconnect" name="platform_packages_apps_prebuilt_kdeconnect" remote="fmo" revision="master" />
-	<project path="packages/apps/GmsCore" name="android_packages_apps_GmsCore" remote="microg" revision="master" />
+	<!-- project path="packages/apps/GmsCore" name="android_packages_apps_GmsCore" remote="microg" revision="master" />
 	<project path="packages/apps/GsfProxy" name="android_packages_apps_GsfProxy" remote="microg" revision="master" />
-	<project path="packages/apps/FakeStore" name="android_packages_apps_FakeStore" remote="fmo" revision="fmo-master" />
+	<project path="packages/apps/FakeStore" name="android_packages_apps_FakeStore" remote="fmo" revision="fmo-master" / -->
 
 	<!-- LineageOS has a nicer Terminal app than AOSP -->
-	<project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="lineageos" revision="lineage-15.0" />
+	<!-- project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="lineageos" revision="lineage-15.0" / -->
 
 	<!-- TWRP is much more useful than the stock AOSP recovery... -->
-	<project path="bootable/recovery" name="twrp_recovery" remote="fmo" revision="fmo-8.1" />
+	<!-- project path="bootable/recovery" name="twrp_recovery" remote="fmo" revision="fmo-8.1" / -->
 
 	<!-- Use some newer upstream projects -->
 	<remove-project name="platform/external/freetype" />
@@ -69,8 +69,8 @@
 	<project path="external/sqlite" name="platform/external/sqlite" remote="linaro" revision="linaro-upstream-3.22.0-for-8.x" />
 	<remove-project name="platform/external/harfbuzz_ng" />
 	<project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="linaro" revision="linaro-upstream-1.7.5" />
-	<remove-project name="platform/external/libpng" />
-	<project path="external/libpng" name="platform/external/libpng" remote="linaro" revision="linaro-upstream-1.6.34" />
+	<!-- remove-project name="platform/external/libpng" />
+	<project path="external/libpng" name="platform/external/libpng" remote="linaro" revision="linaro-upstream-1.6.34" / -->
 	<remove-project name="platform/external/libjpeg-turbo" />
 	<project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" remote="linaro" revision="linaro-upstream-1.5.3" />
 </manifest>
