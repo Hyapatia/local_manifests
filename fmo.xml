@@ -52,15 +52,19 @@
 	<project path="packages/apps/prebuilt/fdroidclient" name="platform_packages_apps_prebuilt_fdroidclient" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/apkmirror" name="platform_packages_apps_prebuilt_apkmirror" remote="fmo" revision="master" />
 	<project path="packages/apps/prebuilt/kdeconnect" name="platform_packages_apps_prebuilt_kdeconnect" remote="fmo" revision="master" />
-	<project path="packages/apps/GmsCore" name="android_packages_apps_GmsCore" remote="microg" revision="master" />
-	<project path="packages/apps/GsfProxy" name="android_packages_apps_GsfProxy" remote="microg" revision="master" />
-	<project path="packages/apps/FakeStore" name="android_packages_apps_FakeStore" remote="fmo" revision="fmo-master" />
+	<project path="packages/apps/prebuilt/gmscore" name="platform_packages_apps_prebuilt_gmscore" remote="fmo" revision="master" />
+	<project path="packages/apps/prebuilt/gsfproxy" name="platform_packages_apps_prebuilt_gsfproxy" remote="fmo" revision="master" />
+	<project path="packages/apps/prebuilt/fakestore" name="platform_packages_apps_prebuilt_fakestore" remote="fmo" revision="master" />
+	<project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="fmo" revision="fmo-8.1.0" />
 
 	<!-- LineageOS has a nicer Terminal app than AOSP -->
 	<project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="lineageos" revision="lineage-15.0" />
 
 	<!-- TWRP is much more useful than the stock AOSP recovery... -->
 	<project path="bootable/recovery" name="twrp_recovery" remote="fmo" revision="fmo-8.1" />
+	<project path="vendor/aosp" name="vendor_aosp" remote="fmo" revision="fmo-8.1.0" />
+	<project path="vendor/extras" name="vendor_extras" remote="fmo" revision="fmo-8.1.0" />
+	<project path="vendor/fmo" name="vendor_fmo" remote="fmo" revision="fmo-8.1.0"/>
 
 	<!-- Use some newer upstream projects -->
 	<remove-project name="platform/external/freetype" />
