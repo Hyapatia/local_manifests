@@ -14,6 +14,7 @@
 	<remove-project name="device/google/taimen" />
 	<remove-project name="platform/packages/apps/Terminal" />
 	<remove-project name="platform/bootable/recovery" />
+    <remove-project name="platform/packages/apps/Settings" />
 	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0">
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -61,6 +62,10 @@
 
 	<!-- LineageOS has a nicer Terminal app than AOSP -->
 	<project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="lineageos" revision="lineage-15.0" />
+
+    <!-- Fetching android-8.1.0_r22 for Settings, to fix build error, as
+         framewrok/base is rebased to oc-mr branch -->
+    <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="aosp" groups="pdk-fs" revision="refs/tags/android-8.1.0_r22"/>
 
 	<!-- TWRP is much more useful than the stock AOSP recovery... -->
 	<project path="bootable/recovery" name="twrp_recovery" remote="fmo" revision="fmo-8.1" />
