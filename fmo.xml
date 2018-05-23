@@ -13,7 +13,6 @@
 	<remove-project name="device/huawei/angler" />
 	<remove-project name="device/google/taimen" />
 	<remove-project name="platform/packages/apps/Terminal" />
-	<remove-project name="platform/bootable/recovery" />
     <remove-project name="platform/packages/apps/Settings" />
 	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0">
 		<copyfile src="core/root.mk" dest="Makefile" />
@@ -68,8 +67,6 @@
          framewrok/base is rebased to oc-mr branch -->
     <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="aosp" groups="pdk-fs" revision="refs/tags/android-8.1.0_r22"/>
 
-	<!-- TWRP is much more useful than the stock AOSP recovery... -->
-	<project path="bootable/recovery" name="twrp_recovery" remote="fmo" revision="fmo-8.1" />
 	<project path="vendor/aosp" name="vendor_aosp" remote="fmo" revision="fmo-8.1.0" />
 	<project path="vendor/extras" name="vendor_extras" remote="fmo" revision="fmo-8.1.0" />
 	<project path="vendor/fmo" name="vendor_fmo" remote="fmo" revision="fmo-8.1.0"/>
