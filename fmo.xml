@@ -79,7 +79,6 @@
     <!-- External repos -->
     <remove-project name="platform/external/selinux" />
     <remove-project name="platform/external/tinycompress" />
-    <remove-project name="platform/external/e2fsprogs" />
 
     <!-- Hardware repos -->
     <remove-project name="platform/hardware/intel/audio_media" />
@@ -96,26 +95,17 @@
     <remove-project name="platform/hardware/intel/img/psb_headers" />
     <remove-project name="platform/hardware/intel/img/psb_video" />
     <remove-project name="platform/hardware/intel/sensors" />
-    <remove-project name="platform/hardware/interfaces" />
     <remove-project name="platform/hardware/libhardware" />
     <remove-project name="platform/hardware/libhardware_legacy" />
     <remove-project name="platform/hardware/qcom/audio" />
-    <remove-project name="platform/hardware/qcom/bt" />
-    <remove-project name="platform/hardware/qcom/bootctrl" />
-    <remove-project name="platform/hardware/qcom/display" />
-    <remove-project name="platform/hardware/qcom/gps" />
-    <remove-project name="platform/hardware/qcom/keymaster" />
-    <remove-project name="platform/hardware/qcom/media" />
-    <remove-project name="platform/hardware/qcom/msm8x84" />
+	<remove-project name="platform/hardware/qcom/gps" />
     <remove-project name="platform/hardware/qcom/power" />
-    <remove-project name="platform/hardware/qcom/wlan" />
+	<remove-project name="platform/hardware/qcom/wlan" />
     <remove-project name="platform/hardware/ril" />
 
     <!-- General repos -->
     <remove-project name="platform/build" />
     <remove-project name="kernel/tests" />
-    <remove-project name="platform/build/kati" />
-    <remove-project name="platform/bootable/recovery" />
 
     <!-- System repos -->
     <remove-project name="platform/system/sepolicy" />
@@ -123,7 +113,6 @@
     <!-- Packages repos -->
     <remove-project name="platform/packages/apps/Email" />
     <remove-project name="platform/packages/apps/Browser2" />
-    <remove-project name="platform/packages/apps/Bluetooth" />
     <remove-project name="platform/packages/apps/QuickSearchBox" />
     <remove-project name="platform/packages/apps/DevCamera" />
     <remove-project name="platform/packages/inputmethods/LatinIME" />
@@ -144,9 +133,6 @@
     <!-- Add all tracked AOSP repos - pixel ref -->
     <!-- general -->
     <project path="crowdin" name="crowdin" remote="pixel" />
-    <project path="build/kati" name="build_kati" remote="pixel" />
-    <project path="manifest" name="manifest" remote="pixel" />
-    <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
 
     <!-- external -->
     <project path="external/brctl" name="quic/la/platform/external/brctl" remote="caf" revision="LA.AF.1.2.1_rb1.27" />
@@ -162,9 +148,7 @@
     <project path="external/selinux" name="external_selinux" remote="pixel" />
     <project path="external/connectivity" name="LineageOS/android_external_connectivity" remote="github" revision="lineage-15.0" />
     <project path="external/bson" name="LineageOS/android_external_bson" remote="github" revision="cm-14.1" />
-    <project path="external/e2fsprogs" name="external_e2fsprogs" remote="pixel" />
     <project path="external/exfat" name="external_exfat" remote="pixel" />
-    <project path="external/ntfs-3g" name="external_ntfs-3g" remote="pixel" />
 
     <!-- system -->
     <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
@@ -175,36 +159,23 @@
     <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" remote="github" revision="staging/lineage-15.1" />
 
     <!-- hardware -->
-    <project path="hardware/interfaces" name="hardware_interfaces" remote="pixel" />
     <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
     <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="pixel" />
     <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" remote="pixel"  />
-    <project path="hardware/qcom/audio-caf/msm8974" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="staging/lineage-15.1-caf-8974" />
     <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" remote="adesh" revision="lineage-15.0-caf-8996" />
-    <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" remote="pixel"  />
-    <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="pixel"  />
     <project path="hardware/qcom/bt-caf" name="LineageOS/android_hardware_qcom_bt" remote="github" revision="staging/lineage-15.1-caf" />
-    <project path="hardware/qcom/display" name="hardware_qcom_display" remote="pixel"  />
-    <project path="hardware/qcom/display-caf/msm8974" name="LineageOS/android_hardware_qcom_display" remote="github" revision="staging/lineage-15.1-caf-8974" />
     <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display" remote="adesh" revision="lineage-15.0-caf-8996" />
-    <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="pixel" />
     <project path="hardware/qcom/fm" name="hardware_qcom_fm" remote="pixel" />
-    <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="pixel"  />
-    <project path="hardware/qcom/media" name="hardware_qcom_media" remote="pixel"  />
-    <project path="hardware/qcom/msm8x84" name="hardware_qcom_msm8x84" remote="pixel"  />
-    <project path="hardware/qcom/media-caf/msm8974" name="LineageOS/android_hardware_qcom_media" remote="github" revision="staging/lineage-15.1-caf-8974" />
+	<project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="pixel"  />
     <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media" remote="adesh" revision="lineage-15.0-caf-8996" />
     <project path="hardware/qcom/power" name="LineageOS/android_hardware_qcom_power" remote="github" revision="staging/lineage-15.1" />
-    <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="pixel"  />
+	<project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="pixel"  />
     <project path="hardware/qcom/wlan-caf" name="LineageOS/android_hardware_qcom_wlan" remote="github" revision="staging/lineage-15.1-caf" />
     <project path="hardware/ril" name="hardware_ril" remote="pixel" />
     <project path="hardware/ril-caf" name="hardware_ril-caf" remote="pixel" />
-    <project path="hardware/custom-interfaces" name="hardware_custom-interfaces" remote="pixel" />
 
     <!-- packages -->
-    <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="pixel" />
     <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
-    <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-15.0" />
 
     <!-- vendor -->
     <project path="vendor/aosp" name="vendor_aosp" remote="fmo" revision="fmo-8.1.0" />
