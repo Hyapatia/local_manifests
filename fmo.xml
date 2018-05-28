@@ -224,6 +224,7 @@
 	<remove-project name="platform/packages/apps/Terminal" />
 	<remove-project name="platform/frameworks/base" />
 	<remove-project name="platform/packages/apps/Dialer" />
+    <remove-project name="platform/packages/apps/Settings" />
     <project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0-mido-stagging" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -233,6 +234,11 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
     </project>
+
+    <!-- Fetching android-8.1.0_r22 for Settings, to fix build error, as
+    framewrok/base is rebased to oc-mr branch -->
+    <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="aosp" groups="pdk-fs" revision="refs/tags/android-8.1.0_r22"/>
+
 	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-8.1.0" />
 	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-8.1.0" />
 	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-8.1.0" />
