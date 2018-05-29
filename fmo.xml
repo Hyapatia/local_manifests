@@ -23,7 +23,7 @@
 		<linkfile src="target" dest="build/target" />
 		<linkfile src="tools" dest="build/tools" />
 	</project>
-	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-8.1.0" />
+	<project path="frameworks/base" name="platform_frameworks_base" remote="fmo" revision="fmo-8.1.0_r25" />
 	<project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="fmo" revision="fmo-8.1.0" />
 	<project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="fmo" revision="fmo-8.1.0" />
 	<project path="external/chromium-webview" name="platform_external_chromium-webview" remote="fmo" revision="master" />
