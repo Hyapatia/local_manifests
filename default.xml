@@ -80,4 +80,5 @@
 	<project path="external/libpng" name="platform/external/libpng" remote="linaro" revision="linaro-upstream-1.6.34" />
 	<remove-project name="platform/external/libjpeg-turbo" />
 	<project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" remote="linaro" revision="linaro-upstream-1.5.3" />
+        <include name="fdroid-privileges.xml" />
 </manifest>
