@@ -5,14 +5,6 @@
 	<remote name="microg" fetch="https://github.com/microg" />
 	<remote name="lineageos" fetch="https://github.com/LineageOS" />
 	<remote name="linaro" fetch="https://android-git.linaro.org/git/" review="android-review.linaro.org" />
-	<remove-project name="platform/packages/inputmethods/LatinIME" />
-	<remove-project name="platform/frameworks/base" />
-	<remove-project name="platform/packages/apps/Dialer" />
-	<remove-project name="platform/build" />
-	<remove-project name="platform/external/chromium-webview" />
-	<remove-project name="device/huawei/angler" />
-	<remove-project name="device/google/taimen" />
-	<remove-project name="platform/packages/apps/Terminal" />
 	<project path="build/make" name="platform_build" remote="fmo" revision="fmo-8.1.0">
 		<copyfile src="core/root.mk" dest="Makefile" />
 		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
